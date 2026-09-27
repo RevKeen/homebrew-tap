@@ -5,21 +5,21 @@
 class Revkeen < Formula
   desc "RevKeen CLI — manage payments, subscriptions & billing from your terminal"
   homepage "https://revkeen.com"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/revkeen/cli/releases/download/v0.2.0/revkeen_darwin_amd64.tar.gz"
-      sha256 "6e5a44c097f95304371373247111d057c1e8bb1da0e00075f26c47e39c740eea"
+      url "https://github.com/revkeen/cli/releases/download/v0.2.1/revkeen_darwin_amd64.tar.gz"
+      sha256 "8c4c0250c6c6149756da1d5bc25d7f1d2e2dd0bc7df39962bc57374a38942f35"
 
       define_method(:install) do
         bin.install "revkeen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/revkeen/cli/releases/download/v0.2.0/revkeen_darwin_arm64.tar.gz"
-      sha256 "31b8250aeecb2e7e370cf1c35b3450f3e26a0abe3e9fe30d5c417345ad24309c"
+      url "https://github.com/revkeen/cli/releases/download/v0.2.1/revkeen_darwin_arm64.tar.gz"
+      sha256 "111497d46abb8a5692665874082f8103fcdbadd6d0bfdfd9c85c154f591452c2"
 
       define_method(:install) do
         bin.install "revkeen"
@@ -29,15 +29,15 @@ class Revkeen < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/revkeen/cli/releases/download/v0.2.0/revkeen_linux_amd64.tar.gz"
-      sha256 "7c49016698980d6082f0925aef9538bff111c8d99f058f094318f0ae6a6dfed0"
+      url "https://github.com/revkeen/cli/releases/download/v0.2.1/revkeen_linux_amd64.tar.gz"
+      sha256 "b2eba30d395d8ffe54b876a65444df64d69de7c123e6529d4020921ef1902688"
       define_method(:install) do
         bin.install "revkeen"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/revkeen/cli/releases/download/v0.2.0/revkeen_linux_arm64.tar.gz"
-      sha256 "1b9ac8cfb89b83fa7c3698219785baeaa68dd020af4eaaa69f94aafe43afd352"
+      url "https://github.com/revkeen/cli/releases/download/v0.2.1/revkeen_linux_arm64.tar.gz"
+      sha256 "d5c0f0a9827698d9ff399108c3a9988ab2d327c731e28af7a5813320bf7e66d4"
       define_method(:install) do
         bin.install "revkeen"
       end
