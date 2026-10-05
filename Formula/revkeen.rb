@@ -5,21 +5,21 @@
 class Revkeen < Formula
   desc "RevKeen CLI — manage payments, subscriptions & billing from your terminal"
   homepage "https://revkeen.com"
-  version "0.3.0"
+  version "0.3.1-rc.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/revkeen/cli/releases/download/v0.3.0/revkeen_darwin_amd64.tar.gz"
-      sha256 "8b59ad9e7198a812ac476b599bcdec825f77e4fff1b9a8c5e94a28e043c03a63"
+      url "https://github.com/revkeen/cli/releases/download/v0.3.1-rc.1/revkeen_darwin_amd64.tar.gz"
+      sha256 "7eeecd6f32170bbf2b748f333f0d959d2b79186c5f726697ff06a096871de3cb"
 
       define_method(:install) do
         bin.install "revkeen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/revkeen/cli/releases/download/v0.3.0/revkeen_darwin_arm64.tar.gz"
-      sha256 "d7cb8089c89c4bb0dbfafc7ba04c0293071e5ee2406643b43828a0f2c81caf46"
+      url "https://github.com/revkeen/cli/releases/download/v0.3.1-rc.1/revkeen_darwin_arm64.tar.gz"
+      sha256 "bed5dc2254235e35141563e23cc370014c83b249e96ea51465eb5b187d017cf4"
 
       define_method(:install) do
         bin.install "revkeen"
@@ -29,15 +29,15 @@ class Revkeen < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/revkeen/cli/releases/download/v0.3.0/revkeen_linux_amd64.tar.gz"
-      sha256 "2464d7905e8c09c990d62d64c3b4c4527bee6f4d29aca6a67bdd85fb47a570a9"
+      url "https://github.com/revkeen/cli/releases/download/v0.3.1-rc.1/revkeen_linux_amd64.tar.gz"
+      sha256 "4d46c2a223a1a28fb704889b49001e3d6a35845e859ef6ee025fc929e3143e17"
       define_method(:install) do
         bin.install "revkeen"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/revkeen/cli/releases/download/v0.3.0/revkeen_linux_arm64.tar.gz"
-      sha256 "3f5b8edd49faf58214aa05f8a3252d1b19c17b6f804e3205cf22b78e11c12041"
+      url "https://github.com/revkeen/cli/releases/download/v0.3.1-rc.1/revkeen_linux_arm64.tar.gz"
+      sha256 "5a175471b1010fd3749fbd95e63e22765c63c99510fe8f7227f3669d23c62d67"
       define_method(:install) do
         bin.install "revkeen"
       end
